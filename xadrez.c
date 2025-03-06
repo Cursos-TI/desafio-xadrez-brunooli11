@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main (){
 
-    int torre = 1, bispo = 1, rainha = 1;
+    int torre = 1, bispo = 1, rainha = 1, cavalo = 1;
 
     for (torre = 1; torre <= 5; torre++)
     {
@@ -19,6 +19,16 @@ int main (){
         printf("Rainha move para esquerda\n");
         rainha++;
     } while (rainha <= 8);
+
+    while (cavalo--)
+    {
+        for (int i = 1; i <= 2; i++)
+        {
+            printf("Cavalo para baixo\n");
+        }
+        printf("Cavalo para a esquerda\n");
+    }
+    
     
     
     return 0;
